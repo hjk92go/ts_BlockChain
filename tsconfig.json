@@ -1,0 +1,9 @@
+{
+  "include": [
+    "src" //ts가 src의 모든파일을 확인한다는것을 의미
+  ],
+  "compilerOptions": {
+    "outDir": "build", //outDir은 js파일이 생성될 디렉터리를 지정한다.(ts는 컴파일러임) /** 잘작동하는지 보기위해서 package.json에 "build": "tsc"을 입력한다음 npm run build를 입력해주자.
+    "target": "ES6" //어떤버전의 js로 컴파일 하고싶은지 설정할수 있다.
+  }
+}
