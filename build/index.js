@@ -1,9 +1,3 @@
-const hello = () => "hi";
-class Block {
-    constructor(data) {
-        this.data = data;
-    }
-    static hello() {
-        return "hi";
-    }
-}
+// const hello = () => "hi";
+export {};
+//tsconfig.json에서 "allowJs": true 설정해줘야함.

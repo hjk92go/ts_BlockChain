@@ -5,11 +5,12 @@
   "compilerOptions": {
     "outDir": "build", //outDir은 js파일이 생성될 디렉터리를 지정한다.(ts는 컴파일러임) /** 잘작동하는지 보기위해서 package.json에 "build": "tsc"을 입력한다음 npm run build를 입력해주자.
     "target": "ES6", //어떤버전의 js로 컴파일 하고싶은지 설정할수 있다.
-    "lib": ["ES6", "DOM"], // 코드가 es6을 지원하는 환경에서 실행&브라우저에서도 실행 될거라고 지정.
+    "lib": ["ES6"], // 코드가 es6을 지원하는 환경에서 실행&브라우저에서도 실행 될거라고 지정.
     //lib은 합쳐진 라이브러리의 정의 파일을 특정해주는 역할 / 정의파일의 목표로하는 런타임 환경을 알려주게됨
     //즉, TS에게 코드가 어디서 동작할것인지 알려주는것, 이걸 바탕으로 자동완성기능을 제공해준다.
     "strict": true,
     //ts가 우리를 보호해주기 위해서는 strict모드로 설정되어야한다.
-    "allowJs": true
+    "module": "CommonJS",
+    "esModuleInterop": true
   }
 }
